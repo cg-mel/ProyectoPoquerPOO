@@ -288,15 +288,6 @@ public class PokerGUI extends JFrame {
         labelPot.setText("POT: $" + cantidad);
     }
     
-    public String pedirCantidadJugadores() {
-        return JOptionPane.showInputDialog(
-            this,                                 
-            "Ingrese la cantidad de jugadores: ",
-            "Farkle - Configuración de jugadores",
-            JOptionPane.QUESTION_MESSAGE
-        );
-    }
-    
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             PokerGUI juego = new PokerGUI("5 Card Draw");
